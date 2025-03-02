@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('turf1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.wrap{
+    position: relative;
+    width: 900px;
+    height: 450px;
+    border: 2px solid rgba(255, 255,255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.imag{
+    position: absolute;
+    left: 3%;
+}
+.login{
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    text-decoration: none;
+    width: 10%;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 700;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.signup{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    text-decoration: none;
+    width: 10%;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 700;
+}
+
+.signup a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.imag:hover{
+    transform: rotate3d(2,2,1,360deg);
+    transition: 0.9s;
+}
+
+.about{
+    position: absolute;
+    top: 120%;
+    left: 10%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px;
+    width: 1000px;
+    height: 450px;
+    border: 2px solid rgba(255, 255,255, .5);
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    font-weight: 700;
+}
+#abot{
+    width: 50% ;
+    margin-left: 20%;
+}
+.abo{
+    position: absolute;
+    top: 10%;
+    font-size: 200%;
+}
+.abt h1{
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service{
+    position: absolute;
+    top: 360%;
+    left: 4%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px;
+    width: 1250px;
+    height: 1900px;
+    border: 2px solid rgba(255, 255,255, .5);
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#service h1{
+    position: absolute;
+    top: 1% ;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 200%;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.serv b{
+    color: red;
+}
+
+.con{
+    position: absolute;
+    top: 700%;
+    left: 29%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px;
+    width: 450px;
+    height: 350px;
+    border: 2px solid rgba(255, 255,255, .5);
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    font-weight: 700;
+}
+.con h1{
+    position: absolute;
+    top: 1% ;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 200%;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
