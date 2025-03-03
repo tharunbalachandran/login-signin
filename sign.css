@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('sign3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.login{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 2px solid rgba(255, 255,255, .5);
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(25px);
+
+}
+
+h2{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.input{
+    width: 310px;
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+}
+
+.input label{
+    position: absolute;
+    top: 3%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    pointer-events:none;
+}
+
+
+
+.input input{
+    width: 100%;
+    height: 50px;
+    background:transparent ;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000000;
+    padding: 0 35px 0 5px;
+}
+
+.input .icon{
+    position: absolute;
+    right: 9px;
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 57px;
+
+}
+
+.forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #000000;
+    display: flex;
+}
+
+.forgot a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 700;
+}
+.create{
+    font-size: .9em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.create p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.create p a:hover{
+    text-decoration: underline;
+}
